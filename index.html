@@ -60,25 +60,25 @@
   src: url(/7ac30946d57c5e356c30.woff2) format('woff2'), url(/345f4a27750c7e5c044e.woff) format('woff');
 }
 
-table {
+.custom-table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     font-size: 0.9em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-th, td {
+.custom-table th, .custom-table td {
     padding: 12px 15px;
     border: 1px solid #ddd;
     text-align: center;
 }
-th {
+.custom-table th {
     background-color: #f2f2f2;
 }
-tr:nth-child(even) {
+.custom-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
-.highlight {
+.custom-table .highlight {
     background-color: #e9f7e9;
 }
 
@@ -1796,7 +1796,7 @@ tr:nth-child(even) {
   <h2 style="color: #f1c432;">Image Understanding Tasks</h2>
 </div>
 <div style="display: flex; justify-content: center;">
-  <table>
+  <table class="custom-table">
     <thead>
         <tr>
             <th>Method</th>
