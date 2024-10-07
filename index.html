@@ -83,7 +83,7 @@
 }
 
 .experiment-title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   margin: 0;
@@ -1797,6 +1797,34 @@ pre {
             </video>
         </div>
       </div>
+      <p>
+        <ul>
+          <li>
+            <b>Relevant Text Token Selection.</b> Before LLM, we will first pre-select relevant text tokens as text raters. As we can see, from example prompts of four different benchmarks, it is not appropriate to use all text tokens as a reference for vi-
+            sual sparsification. Therefore, we calculate the similarity between the prompt and the image, and select candidates who exceed the mean of similarity values as the text raters.
+          </li>
+          <li>
+            <b>Estimation of Visual Token Significance.</b> In our case, we
+            need to understand how relevant a visual token is to the textual tokens in order to determine whether
+            it should be removed. Therefore, we naturally come up with reusing the self-attention logits in
+            VLMs transformer layers as a reference, since they already contain language-to-vision query results.
+          </li>
+          <li>
+            <b>Sparsification Level Adaptation.</b>  We further propose a
+            rank-based strategy to adaptively determine the level of vision sparsification at each decoder layer. The differ-
+            ence between the dimension and rank of the self-attention logits reflects its redundancy.
+          </li>
+          <li>
+            <b>Token Aggregation.</b> We first recycle the pruned visual tokens h_v with the top-k highest val-
+            ues in the self-attention logits from the deleted pool. Then, we group h_v tokens with k-nearest neighbor density peak
+            aggregation algorithm for adaptive token aggregation.
+          </li>
+          <li>
+            <b>Token Reconstruction.</b> Having performed token aggregation, the recycled tokens with similar
+            semantics are classified into the same group.
+          </li> 
+        </ul>
+      </p>
   </div>
   <h2 style="color: #C1D2EC;">Affordance Generalization Beyond Categories Visualization</h2>
 </div>
