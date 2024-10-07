@@ -60,6 +60,28 @@
   src: url(/7ac30946d57c5e356c30.woff2) format('woff2'), url(/345f4a27750c7e5c044e.woff) format('woff');
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.highlight {
+    background-color: #e9f7e9;
+}
+
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hc3NldHMvZm9udHMvZm9udHMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztDQXVCQzs7QUFFRCxnRUFBZ0U7QUFDaEUscURBQXFEOztBQUlyRDtFQUNFLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLG9IQUErRztBQUNqSDtBQUNBO0VBQ0UsdUJBQXVCO0VBQ3ZCLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsb0hBQW1IO0FBQ3JIO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixvSEFBaUg7QUFDbkgiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBsaWNlbnNlXG4gKiBNeUZvbnRzIFdlYmZvbnQgQnVpbGQgSUQgMzk2MDUxMiwgMjAyMC0xMC0xNFQwOTo0NzoyNy0wNDAwXG4gKlxuICogVGhlIGZvbnRzIGxpc3RlZCBpbiB0aGlzIG5vdGljZSBhcmUgc3ViamVjdCB0byB0aGUgRW5kIFVzZXIgTGljZW5zZVxuICogQWdyZWVtZW50KHMpIGVudGVyZWQgaW50byBieSB0aGUgd2Vic2l0ZSBvd25lci4gQWxsIG90aGVyIHBhcnRpZXMgYXJlXG4gKiBleHBsaWNpdGx5IHJlc3RyaWN0ZWQgZnJvbSB1c2luZyB0aGUgTGljZW5zZWQgV2ViZm9udHMocykuXG4gKlxuICogWW91IG1heSBvYnRhaW4gYSB2YWxpZCBsaWNlbnNlIGF0IHRoZSBVUkxzIGJlbG93LlxuICpcbiAqIFdlYmZvbnQ6IFNvZmlhUHJvLUxpZ2h0IGJ5IE1vc3RhcmRlc2lnblxuICogVVJMOiBodHRwczovL3d3dy5teWZvbnRzLmNvbS9mb250cy9tb3N0YXJkZXNpZ24vc29maWEtcHJvL2xpZ2h0L1xuICpcbiAqIFdlYmZvbnQ6IFNvZmlhUHJvLVJlZ3VsYXIgYnkgTW9zdGFyZGVzaWduXG4gKiBVUkw6IGh0dHBzOi8vd3d3Lm15Zm9udHMuY29tL2ZvbnRzL21vc3RhcmRlc2lnbi9zb2ZpYS1wcm8vcmVndWxhci9cbiAqXG4gKiBXZWJmb250OiBTb2ZpYVByby1NZWRpdW0gYnkgTW9zdGFyZGVzaWduXG4gKiBVUkw6IGh0dHBzOi8vd3d3Lm15Zm9udHMuY29tL2ZvbnRzL21vc3RhcmRlc2lnbi9zb2ZpYS1wcm8vbWVkaXVtL1xuICpcbiAqXG4gKiBXZWJmb250cyBjb3B5cmlnaHQ6IENvcHlyaWdodCDCqSBPbGl2aWVyIEdvdXJ2YXQgLSBNb3N0YXJkZXNpZ24gVHlwZSBGb3VuZHJ5LCAyMDIwLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxuICpcbiAqIMKpIDIwMjAgTXlGb250cyBJbmNcbiovXG5cbi8qIEBpbXBvcnQgbXVzdCBiZSBhdCB0b3Agb2YgZmlsZSwgb3RoZXJ3aXNlIENTUyB3aWxsIG5vdCB3b3JrICovXG4vKiBAaW1wb3J0IHVybCgnLy9oZWxsby5teWZvbnRzLm5ldC9jb3VudC8zY2FhM2EnKTsgKi9cblxuQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9T3BlbitTYW5zOndnaHRANDAwOzUwMDs2MDAmZGlzcGxheT1zd2FwJyk7XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ1NvZmlhUHJvJztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogMzAwO1xuICBzcmM6IHVybCgnLi9Tb2ZpYVByby9Tb2ZpYVByb0xpZ2h0LndvZmYyJykgZm9ybWF0KCd3b2ZmMicpLCB1cmwoJy4vU29maWFQcm8vU29maWFQcm9MaWdodC53b2ZmJykgZm9ybWF0KCd3b2ZmJyk7XG59XG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdTb2ZpYVBybyc7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgc3JjOiB1cmwoJy4vU29maWFQcm8vU29maWFQcm9SZWd1bGFyLndvZmYyJykgZm9ybWF0KCd3b2ZmMicpLCB1cmwoJy4vU29maWFQcm8vU29maWFQcm9SZWd1bGFyLndvZmYnKSBmb3JtYXQoJ3dvZmYnKTtcbn1cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ1NvZmlhUHJvJztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogNTAwO1xuICBzcmM6IHVybCgnLi9Tb2ZpYVByby9Tb2ZpYVByb01lZGl1bS53b2ZmMicpIGZvcm1hdCgnd29mZjInKSwgdXJsKCcuL1NvZmlhUHJvL1NvZmlhUHJvTWVkaXVtLndvZmYnKSBmb3JtYXQoJ3dvZmYnKTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>/* 
     Allow adding a border to an element by just adding a border-width. (https: //github.com/tailwindcss/tailwindcss/pull/116)
     // by default this get loaded from preflight setting (reset css), 
@@ -1759,6 +1781,173 @@
   </p>
 </div>
 </div>
+
+<!-- RESULTS SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mmmu">Experiment Results</h1>
+  </div>
+</section>
+
+<div class="content" style="margin-top: 50px;">
+</div>
+<!-- <div class="figure" style="height: 224px; background-image: url(figures/teaser.png); margin-top: 20px;"></div> -->
+<div>
+  <h2 style="color: #f1c432;">Image Understanding Tasks</h2>
+</div>
+<div style="display: flex; justify-content: center;">
+  <table>
+    <thead>
+        <tr>
+            <th>Method</th>
+            <th>GQA</th>
+            <th>MMB</th>
+            <th>MME</th>
+            <th>POPE</th>
+            <th>SQA</th>
+            <th>VQA<sup>V2</sup></th>
+            <th>VQA<sub>Text</sub></th>
+            <th>ConB</th>
+            <th>Avg.</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="10"><strong>Upper Bound, 576 Tokens (100%)</strong></td>
+        </tr>
+        <tr>
+            <td>Vanilla</td>
+            <td>61.9<br>100%</td>
+            <td>64.7<br>100%</td>
+            <td>1862<br>100%</td>
+            <td>85.9<br>100%</td>
+            <td>69.5<br>100%</td>
+            <td>78.5<br>100%</td>
+            <td>58.2<br>100%</td>
+            <td>19.8<br>100%</td>
+            <td>100%</td>
+        </tr>
+        <tr class="highlight">
+            <td colspan="10"><strong>Retain 192 Tokens (↓ 66.7%)</strong></td>
+        </tr>
+        <tr>
+            <td>ToMe (ICLR23)</td>
+            <td>54.3<br>87.7%</td>
+            <td>60.5<br>93.5%</td>
+            <td>1563<br>83.9%</td>
+            <td>72.4<br>84.3%</td>
+            <td>65.2<br>93.8%</td>
+            <td>68.0<br>86.6%</td>
+            <td>52.1<br>89.5%</td>
+            <td>17.4<br>87.9%</td>
+            <td>88.4%</td>
+        </tr>
+        <tr>
+            <td>FastV (ECCV24)</td>
+            <td>52.7<br>85.1%</td>
+            <td>61.2<br>94.6%</td>
+            <td>1612<br>86.6%</td>
+            <td>64.8<br>75.4%</td>
+            <td>67.3<br>96.8%</td>
+            <td>67.1<br>85.5%</td>
+            <td>52.5<br>90.2%</td>
+            <td>18.0<br>90.9%</td>
+            <td>88.1%</td>
+        </tr>
+        <tr>
+            <td>SparseVLM</td>
+            <td>57.6<br>93.1%</td>
+            <td>62.5<br>96.6%</td>
+            <td>1721<br>92.4%</td>
+            <td>83.6<br>97.3%</td>
+            <td>69.1<br>99.4%</td>
+            <td>75.6<br>96.3%</td>
+            <td>56.1<br>96.4%</td>
+            <td>18.8<br>94.9%</td>
+            <td><strong>95.8%</strong><br>↑ (7.4%)</td>
+        </tr>
+        <tr class="highlight">
+            <td colspan="10"><strong>Retain 128 Tokens (↓ 77.8%)</strong></td>
+        </tr>
+        <tr>
+            <td>ToMe (ICLR23)</td>
+            <td>52.4<br>84.7%</td>
+            <td>53.3<br>82.4%</td>
+            <td>1343<br>72.1%</td>
+            <td>62.8<br>73.1%</td>
+            <td>59.6<br>85.8%</td>
+            <td>63.0<br>80.2%</td>
+            <td>49.1<br>84.4%</td>
+            <td>16.0<br>80.8%</td>
+            <td>80.4%</td>
+        </tr>
+        <tr>
+            <td>FastV (ECCV24)</td>
+            <td>49.6<br>80.1%</td>
+            <td>56.1<br>86.7%</td>
+            <td>1490<br>80.0%</td>
+            <td>59.6<br>69.4%</td>
+            <td>60.2<br>86.6%</td>
+            <td>61.8<br>78.7%</td>
+            <td>50.6<br>86.9%</td>
+            <td>17.1<br>86.4%</td>
+            <td>81.9%</td>
+        </tr>
+        <tr>
+            <td>SparseVLM</td>
+            <td>56.0<br>90.5%</td>
+            <td>60.0<br>92.7%</td>
+            <td>1696<br>91.1%</td>
+            <td>80.5<br>93.7%</td>
+            <td>67.1<br>96.5%</td>
+            <td>73.8<br>94.0%</td>
+            <td>54.9<br>94.3%</td>
+            <td>18.5<br>93.4%</td>
+            <td><strong>93.3%</strong><br>↑ (11.4%)</td>
+        </tr>
+        <tr class="highlight">
+            <td colspan="10"><strong>Retain 64 Tokens (↓ 88.9%)</strong></td>
+        </tr>
+        <tr>
+            <td>ToMe (ICLR23)</td>
+            <td>48.6<br>78.5%</td>
+            <td>43.7<br>67.5%</td>
+            <td>1138<br>61.1%</td>
+            <td>52.5<br>61.1%</td>
+            <td>50.0<br>71.9%</td>
+            <td>57.1<br>72.7%</td>
+            <td>45.3<br>77.8%</td>
+            <td>14.0<br>70.7%</td>
+            <td>70.2%</td>
+        </tr>
+        <tr>
+            <td>FastV (ECCV24)</td>
+            <td>46.1<br>74.5%</td>
+            <td>48.0<br>74.2%</td>
+            <td>1256<br>67.5%</td>
+            <td>48.0<br>55.9%</td>
+            <td>55.1<br>73.5%</td>
+            <td>55.0<br>70.1%</td>
+            <td>47.8<br>82.1%</td>
+            <td>15.6<br>78.8%</td>
+            <td>72.1%</td>
+        </tr>
+        <tr>
+            <td>SparseVLM</td>
+            <td>52.7<br>85.1%</td>
+            <td>56.2<br>86.9%</td>
+            <td>1505<br>80.8%</td>
+            <td>75.1<br>87.4%</td>
+            <td>62.2<br>89.4%</td>
+            <td>68.2<br>86.9%</td>
+            <td>51.8<br>89.0%</td>
+            <td>17.7<br>89.4%</td>
+            <td><strong>86.9%</strong><br>↑ (14.8%)</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
     <div>
       <h2 style="color: #f1c432;">Visualization of SparseVLM on different VQA prompts</h2>
     <div style="display: flex; justify-content: center;">
@@ -1778,16 +1967,6 @@
 	</div>
 
 </div>
-
-  <div class="content" style="margin-top: 50px;">
-  </div>
-  <!-- <div class="figure" style="height: 224px; background-image: url(figures/teaser.png); margin-top: 20px;"></div> -->
-  <div>
-    <h2 style="color: #f1c432;">Robot experiments under cluster setting and cross-view setting</h2>
-  </div>
-  <div style="display: flex; justify-content: center;">
-    <img src="figures/Image.png" alt="Teaser Image" style="width: 930px">
-  </div>
 
   <!-- <div class="content" style="margin-top: 50px;">
   </div>
