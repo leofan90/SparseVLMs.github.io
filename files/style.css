@@ -12,7 +12,7 @@ a:hover {color: #ce5252;}
 .hr {height: 1px; background-color: #d6dbdf; max-width: 960px; margin: auto; margin-top: 48px;}
 .hr-long {width: 100%; margin: 48px 0px; height: 1px; background-color: #d6dbdf;}
 p {line-height: 1.4em; text-align: justify;}
-.abstract {max-width: 940px; margin: 50px;}
+.abstract {max-width: 940px; margin: auto;}
 .math {font-family: "Computer Modern Sans", sans-serif; font-style: italic;}
 sub, sup {line-height: 0;}
 .figure {width: 100%; min-height: 120px; margin: 36px 0; background-repeat: no-repeat; background-position: center; background-size: contain;}
