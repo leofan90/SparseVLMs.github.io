@@ -1845,30 +1845,25 @@ pre {
   </div>
   <div class="content" style="margin-top: 50px;">
   <p class="abstract">
-    <ul>
+    <ul style="line-height: 1.8;">
       <li>
-        <b>Relevant Text Token Selection.</b> Before LLM, we will first pre-select relevant text tokens as text raters. As we can see, from example prompts of four different benchmarks, it is not appropriate to use all text tokens as a reference for vi
-        sual sparsification. Therefore, we calculate the similarity between the prompt and the image, and select candidates who exceed the mean of similarity values as the text raters.
+        <b>Relevant Text Token Selection.</b> Before LLM, we will first pre-select relevant text tokens as text raters. As we can see, from example prompts of four different benchmarks, it is not appropriate to use all text tokens as a reference for visual sparsification. Therefore, we calculate the similarity between the prompt and the image, and select candidates who exceed the mean of similarity values as the text raters.
       </li>
+      
       <li>
-        <b>Estimation of Visual Token Significance.</b> In our case, we
-        need to understand how relevant a visual token is to the textual tokens in order to determine whether
-        it should be removed. Therefore, we naturally come up with reusing the self-attention logits in
-        VLMs transformer layers as a reference, since they already contain language-to-vision query results.
+        <b>Estimation of Visual Token Significance.</b> In our case, we need to understand how relevant a visual token is to the textual tokens in order to determine whether it should be removed. Therefore, we naturally come up with reusing the self-attention logits in VLMs transformer layers as a reference, since they already contain language-to-vision query results.
       </li>
+      
       <li>
-        <b>Sparsification Level Adaptation.</b>  We further propose a
-        rank-based strategy to adaptively determine the level of vision sparsification at each decoder layer. The differ
-        ence between the dimension and rank of the self-attention logits reflects its redundancy.
+        <b>Sparsification Level Adaptation.</b> We further propose a rank-based strategy to adaptively determine the level of vision sparsification at each decoder layer. The difference between the dimension and rank of the self-attention logits reflects its redundancy.
       </li>
+      
       <li>
-        <b>Token Aggregation.</b> We first recycle the pruned visual tokens h<sub>v</sub> with the top-k highest val
-        ues in the self-attention logits from the deleted pool. Then, we group h<sub>v</sub> tokens with k-nearest neighbor density peak
-        aggregation algorithm for adaptive token aggregation.
+        <b>Token Aggregation.</b> We first recycle the pruned visual tokens h<sub>v</sub> with the top-k highest values in the self-attention logits from the deleted pool. Then, we group h<sub>v</sub> tokens with k-nearest neighbor density peak aggregation algorithm for adaptive token aggregation.
       </li>
+      
       <li>
-        <b>Token Reconstruction.</b> Having performed token aggregation, the recycled tokens with similar
-        semantics are classified into the same group.
+        <b>Token Reconstruction.</b> Having performed token aggregation, the recycled tokens with similar semantics are classified into the same group.
       </li> 
     </ul>
   </p>
@@ -2225,7 +2220,7 @@ pre {
       <ul style="list-style-type: none; padding: 0; margin-left: 50px">
         <li><span style="font-weight: bold;">Yuan Zhang: </span><span>zhangyuan@stu.pku.edu.cn</span></li>
         <li><span style="font-weight: bold;">Chun-Kai Fan: </span><span>chunkaifan@stu.pku.edu.cn</span></li>
-        <li><span style="font-weight: bold;">Junpeng Ma: </span><span>18270827309@163.com</span></li>
+        <li><span style="font-weight: bold;">Junpeng Ma: </span><span>jpma24@m.fudan.edu.cn</span></li>
         <li><span style="font-weight: bold;">Wenzhao Zheng: </span><span>wzzheng@berkeley.edu</span></li>
         <li><span style="font-weight: bold;">Shanghang Zhang: </span><span>shanghang@pku.edu.cn</span></li>
       </ul>
