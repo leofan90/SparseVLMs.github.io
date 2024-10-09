@@ -2062,107 +2062,108 @@ pre {
 <div>
   <h2 style="color: #C1D2EC;">Video Understanding Tasks</h2>
 </div>
-<!-- <div class="content" style="margin-top: 50px;"> -->
-  <div class="content-Image" style="margin-bottom: 40px">
-    <div style="display: flex; justify-content: center;">
-      <table class="custom-table">
-        <thead>
-            <tr>
-                <th rowspan="2">Method</th>
-                <th colspan="2">TGIF</th>
-                <th colspan="2">MSVD</th>
-                <th colspan="2">MSRVTT</th>
-                <th colspan="2">ActivityNet</th>
-                <th colspan="2">Avg</th>
-            </tr>
-            <tr>
-                <th>Acc</th>
-                <th>Score</th>
-                <th>Acc</th>
-                <th>Score</th>
-                <th>Acc</th>
-                <th>Score</th>
-                <th>Acc</th>
-                <th>Score</th>
-                <th>Acc</th>
-                <th>Score</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Video-LLAVA</td>
-                <td>47.1</td>
-                <td>3.35</td>
-                <td>69.8</td>
-                <td>3.92</td>
-                <td>56.7</td>
-                <td>3.48</td>
-                <td>43.1</td>
-                <td>3.35</td>
-                <td>100.0%</td>
-                <td>+0.00</td>
-            </tr>
-            <tr>
-                <td>FastV <sub>(ECCV24)</sub></td>
-                <td>23.1<br>49.0%</td>
-                <td>2.47<br>-0.88</td>
-                <td>38.0<br>54.4%</td>
-                <td>2.71<br>-1.21</td>
-                <td>19.3<br>34.0%</td>
-                <td>2.02<br>1.46</td>
-                <td>30.6<br>71.0%</td>
-                <td>2.82<br>-0.53</td>
-                <td>52.1%</td>
-                <td>-1.02</td>
-            </tr>
-            <!-- <tr>
-                <td></td>
-                <td>49.0%</td>
-                <td>-0.88</td>
-                <td>54.4%</td>
-                <td>-1.21</td>
-                <td>34.0%</td>
-                <td>-1.46</td>
-                <td>71.0%</td>
-                <td>-0.53</td>
-                <td></td>
-                <td></td>
-            </tr> -->
-            <tr>
-                <td>SparseVLM</td>
-                <td>44.7<br>94.9%</td>
-                <td>3.29<br>-0.06</td>
-                <td>68.2<br>97.7%</td>
-                <td>3.90<br>-0.02</td>
-                <td>31.0<br>54.7%</td>
-                <td>2.68<br>-0.80</td>
-                <td>42.6<br>98.8%</td>
-                <td>3.32<br>-0.03</td>
-                <td><strong>86.5%</strong><br>↑ (34.4%)</td>
-                <td><strong>-0.17</strong><br>↑ (0.85)</td>
-            </tr>
-            <!-- <tr>
-                <td></td>
-                <td>94.9%</td>
-                <td>-0.06</td>
-                <td>97.7%</td>
-                <td>-0.02</td>
-                <td>54.7%</td>
-                <td>-0.80</td>
-                <td>98.8%</td>
-                <td>-0.03</td>
-                <td class="increase">↑ (34.4%)</td>
-                <td class="increase">↑ (0.85)</td>
-            </tr> -->
-        </tbody>
-    </table>
-    </div>
+<div class="content-Image" style="margin-bottom: 40px">
+  <div style="display: flex; justify-content: center;">
+    <table class="custom-table">
+      <thead>
+          <tr>
+              <th rowspan="2">Method</th>
+              <th colspan="2">TGIF</th>
+              <th colspan="2">MSVD</th>
+              <th colspan="2">MSRVTT</th>
+              <th colspan="2">ActivityNet</th>
+              <th colspan="2">Avg</th>
+          </tr>
+          <tr>
+              <th>Acc</th>
+              <th>Score</th>
+              <th>Acc</th>
+              <th>Score</th>
+              <th>Acc</th>
+              <th>Score</th>
+              <th>Acc</th>
+              <th>Score</th>
+              <th>Acc</th>
+              <th>Score</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Video-LLAVA</td>
+              <td>47.1</td>
+              <td>3.35</td>
+              <td>69.8</td>
+              <td>3.92</td>
+              <td>56.7</td>
+              <td>3.48</td>
+              <td>43.1</td>
+              <td>3.35</td>
+              <td>100.0%</td>
+              <td>+0.00</td>
+          </tr>
+          <tr>
+              <td>FastV <sub>(ECCV24)</sub></td>
+              <td>23.1<br>49.0%</td>
+              <td>2.47<br>-0.88</td>
+              <td>38.0<br>54.4%</td>
+              <td>2.71<br>-1.21</td>
+              <td>19.3<br>34.0%</td>
+              <td>2.02<br>1.46</td>
+              <td>30.6<br>71.0%</td>
+              <td>2.82<br>-0.53</td>
+              <td>52.1%</td>
+              <td>-1.02</td>
+          </tr>
+          <!-- <tr>
+              <td></td>
+              <td>49.0%</td>
+              <td>-0.88</td>
+              <td>54.4%</td>
+              <td>-1.21</td>
+              <td>34.0%</td>
+              <td>-1.46</td>
+              <td>71.0%</td>
+              <td>-0.53</td>
+              <td></td>
+              <td></td>
+          </tr> -->
+          <tr>
+              <td>SparseVLM</td>
+              <td>44.7<br>94.9%</td>
+              <td>3.29<br>-0.06</td>
+              <td>68.2<br>97.7%</td>
+              <td>3.90<br>-0.02</td>
+              <td>31.0<br>54.7%</td>
+              <td>2.68<br>-0.80</td>
+              <td>42.6<br>98.8%</td>
+              <td>3.32<br>-0.03</td>
+              <td><strong>86.5%</strong><br>↑ (34.4%)</td>
+              <td><strong>-0.17</strong><br>↑ (0.85)</td>
+          </tr>
+          <!-- <tr>
+              <td></td>
+              <td>94.9%</td>
+              <td>-0.06</td>
+              <td>97.7%</td>
+              <td>-0.02</td>
+              <td>54.7%</td>
+              <td>-0.80</td>
+              <td>98.8%</td>
+              <td>-0.03</td>
+              <td class="increase">↑ (34.4%)</td>
+              <td class="increase">↑ (0.85)</td>
+          </tr> -->
+      </tbody>
+  </table>
+  </div>
+  <div class="content" style="margin-top: 50px;">
     <p><b><i>Table 2:</i></b> <b>The results of Video-LLaVA with SparseVLM on video question answering task.</b> The
       original number of video tokens is 2048, while our experiment collectively prunes it down to 135
       tokens. FastV is included for comparison. The GPT-3.5 turbo is adopted for assistive evaluation.
     </p> 
   </div>
-<!-- </div> -->
+</div>
+
 
     <div>
       <h2 style="color: #C1D2EC;">Visualization of SparseVLM on different VQA prompts</h2>
