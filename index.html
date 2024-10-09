@@ -1885,158 +1885,162 @@ pre {
 <div>
   <h2 style="color: #C1D2EC;">Image Understanding Tasks</h2>
 </div>
-<div style="display: flex; justify-content: center;">
-  <table class="custom-table">
-    <thead>
-        <tr>
-            <th>Method</th>
-            <th>GQA</th>
-            <th>MMB</th>
-            <th>MME</th>
-            <th>POPE</th>
-            <th>SQA</th>
-            <th>VQA<sup>V2</sup></th>
-            <th>VQA<sub>Text</sub></th>
-            <th>ConB</th>
-            <th>Avg.</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td colspan="10"><strong>Upper Bound, 576 Tokens (100%)</strong></td>
-        </tr>
-        <tr>
-            <td>Vanilla</td>
-            <td>61.9<br>100%</td>
-            <td>64.7<br>100%</td>
-            <td>1862<br>100%</td>
-            <td>85.9<br>100%</td>
-            <td>69.5<br>100%</td>
-            <td>78.5<br>100%</td>
-            <td>58.2<br>100%</td>
-            <td>19.8<br>100%</td>
-            <td>100%</td>
-        </tr>
-        <tr class="highlight">
-            <td colspan="10"><strong>Retain 192 Tokens (↓ 66.7%)</strong></td>
-        </tr>
-        <tr>
-            <td>ToMe <sub>(ICLR23)</sub></td>
-            <td>54.3<br>87.7%</td>
-            <td>60.5<br>93.5%</td>
-            <td>1563<br>83.9%</td>
-            <td>72.4<br>84.3%</td>
-            <td>65.2<br>93.8%</td>
-            <td>68.0<br>86.6%</td>
-            <td>52.1<br>89.5%</td>
-            <td>17.4<br>87.9%</td>
-            <td>88.4%</td>
-        </tr>
-        <tr>
-            <td>FastV <sub>(ECCV24)</sub></td>
-            <td>52.7<br>85.1%</td>
-            <td>61.2<br>94.6%</td>
-            <td>1612<br>86.6%</td>
-            <td>64.8<br>75.4%</td>
-            <td>67.3<br>96.8%</td>
-            <td>67.1<br>85.5%</td>
-            <td>52.5<br>90.2%</td>
-            <td>18.0<br>90.9%</td>
-            <td>88.1%</td>
-        </tr>
-        <tr>
-            <td>SparseVLM</td>
-            <td>57.6<br>93.1%</td>
-            <td>62.5<br>96.6%</td>
-            <td>1721<br>92.4%</td>
-            <td>83.6<br>97.3%</td>
-            <td>69.1<br>99.4%</td>
-            <td>75.6<br>96.3%</td>
-            <td>56.1<br>96.4%</td>
-            <td>18.8<br>94.9%</td>
-            <td><strong>95.8%</strong><br>↑ (7.4%)</td>
-        </tr>
-        <tr class="highlight">
-            <td colspan="10"><strong>Retain 128 Tokens (↓ 77.8%)</strong></td>
-        </tr>
-        <tr>
-            <td>ToMe <sub>(ICLR23)</sub></td>
-            <td>52.4<br>84.7%</td>
-            <td>53.3<br>82.4%</td>
-            <td>1343<br>72.1%</td>
-            <td>62.8<br>73.1%</td>
-            <td>59.6<br>85.8%</td>
-            <td>63.0<br>80.2%</td>
-            <td>49.1<br>84.4%</td>
-            <td>16.0<br>80.8%</td>
-            <td>80.4%</td>
-        </tr>
-        <tr>
-            <td>FastV <sub>(ECCV24)</sub></td>
-            <td>49.6<br>80.1%</td>
-            <td>56.1<br>86.7%</td>
-            <td>1490<br>80.0%</td>
-            <td>59.6<br>69.4%</td>
-            <td>60.2<br>86.6%</td>
-            <td>61.8<br>78.7%</td>
-            <td>50.6<br>86.9%</td>
-            <td>17.1<br>86.4%</td>
-            <td>81.9%</td>
-        </tr>
-        <tr>
-            <td>SparseVLM</td>
-            <td>56.0<br>90.5%</td>
-            <td>60.0<br>92.7%</td>
-            <td>1696<br>91.1%</td>
-            <td>80.5<br>93.7%</td>
-            <td>67.1<br>96.5%</td>
-            <td>73.8<br>94.0%</td>
-            <td>54.9<br>94.3%</td>
-            <td>18.5<br>93.4%</td>
-            <td><strong>93.3%</strong><br>↑ (11.4%)</td>
-        </tr>
-        <tr class="highlight">
-            <td colspan="10"><strong>Retain 64 Tokens (↓ 88.9%)</strong></td>
-        </tr>
-        <tr>
-            <td>ToMe <sub>(ICLR23)</sub></td>
-            <td>48.6<br>78.5%</td>
-            <td>43.7<br>67.5%</td>
-            <td>1138<br>61.1%</td>
-            <td>52.5<br>61.1%</td>
-            <td>50.0<br>71.9%</td>
-            <td>57.1<br>72.7%</td>
-            <td>45.3<br>77.8%</td>
-            <td>14.0<br>70.7%</td>
-            <td>70.2%</td>
-        </tr>
-        <tr>
-            <td>FastV <sub>(ECCV24)</sub></td>
-            <td>46.1<br>74.5%</td>
-            <td>48.0<br>74.2%</td>
-            <td>1256<br>67.5%</td>
-            <td>48.0<br>55.9%</td>
-            <td>55.1<br>73.5%</td>
-            <td>55.0<br>70.1%</td>
-            <td>47.8<br>82.1%</td>
-            <td>15.6<br>78.8%</td>
-            <td>72.1%</td>
-        </tr>
-        <tr>
-            <td>SparseVLM</td>
-            <td>52.7<br>85.1%</td>
-            <td>56.2<br>86.9%</td>
-            <td>1505<br>80.8%</td>
-            <td>75.1<br>87.4%</td>
-            <td>62.2<br>89.4%</td>
-            <td>68.2<br>86.9%</td>
-            <td>51.8<br>89.0%</td>
-            <td>17.7<br>89.4%</td>
-            <td><strong>86.9%</strong><br>↑ (14.8%)</td>
-        </tr>
-    </tbody>
-</table>
 
+<div class="content" style="margin-top: 50px;">
+  <div class="content-Image" style="margin-bottom: 40px">
+    <div style="display: flex; justify-content: center;">
+      <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Method</th>
+                <th>GQA</th>
+                <th>MMB</th>
+                <th>MME</th>
+                <th>POPE</th>
+                <th>SQA</th>
+                <th>VQA<sup>V2</sup></th>
+                <th>VQA<sub>Text</sub></th>
+                <th>ConB</th>
+                <th>Avg.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="10"><strong>Upper Bound, 576 Tokens (100%)</strong></td>
+            </tr>
+            <tr>
+                <td>Vanilla</td>
+                <td>61.9<br>100%</td>
+                <td>64.7<br>100%</td>
+                <td>1862<br>100%</td>
+                <td>85.9<br>100%</td>
+                <td>69.5<br>100%</td>
+                <td>78.5<br>100%</td>
+                <td>58.2<br>100%</td>
+                <td>19.8<br>100%</td>
+                <td>100%</td>
+            </tr>
+            <tr class="highlight">
+                <td colspan="10"><strong>Retain 192 Tokens (↓ 66.7%)</strong></td>
+            </tr>
+            <tr>
+                <td>ToMe <sub>(ICLR23)</sub></td>
+                <td>54.3<br>87.7%</td>
+                <td>60.5<br>93.5%</td>
+                <td>1563<br>83.9%</td>
+                <td>72.4<br>84.3%</td>
+                <td>65.2<br>93.8%</td>
+                <td>68.0<br>86.6%</td>
+                <td>52.1<br>89.5%</td>
+                <td>17.4<br>87.9%</td>
+                <td>88.4%</td>
+            </tr>
+            <tr>
+                <td>FastV <sub>(ECCV24)</sub></td>
+                <td>52.7<br>85.1%</td>
+                <td>61.2<br>94.6%</td>
+                <td>1612<br>86.6%</td>
+                <td>64.8<br>75.4%</td>
+                <td>67.3<br>96.8%</td>
+                <td>67.1<br>85.5%</td>
+                <td>52.5<br>90.2%</td>
+                <td>18.0<br>90.9%</td>
+                <td>88.1%</td>
+            </tr>
+            <tr>
+                <td>SparseVLM</td>
+                <td>57.6<br>93.1%</td>
+                <td>62.5<br>96.6%</td>
+                <td>1721<br>92.4%</td>
+                <td>83.6<br>97.3%</td>
+                <td>69.1<br>99.4%</td>
+                <td>75.6<br>96.3%</td>
+                <td>56.1<br>96.4%</td>
+                <td>18.8<br>94.9%</td>
+                <td><strong>95.8%</strong><br>↑ (7.4%)</td>
+            </tr>
+            <tr class="highlight">
+                <td colspan="10"><strong>Retain 128 Tokens (↓ 77.8%)</strong></td>
+            </tr>
+            <tr>
+                <td>ToMe <sub>(ICLR23)</sub></td>
+                <td>52.4<br>84.7%</td>
+                <td>53.3<br>82.4%</td>
+                <td>1343<br>72.1%</td>
+                <td>62.8<br>73.1%</td>
+                <td>59.6<br>85.8%</td>
+                <td>63.0<br>80.2%</td>
+                <td>49.1<br>84.4%</td>
+                <td>16.0<br>80.8%</td>
+                <td>80.4%</td>
+            </tr>
+            <tr>
+                <td>FastV <sub>(ECCV24)</sub></td>
+                <td>49.6<br>80.1%</td>
+                <td>56.1<br>86.7%</td>
+                <td>1490<br>80.0%</td>
+                <td>59.6<br>69.4%</td>
+                <td>60.2<br>86.6%</td>
+                <td>61.8<br>78.7%</td>
+                <td>50.6<br>86.9%</td>
+                <td>17.1<br>86.4%</td>
+                <td>81.9%</td>
+            </tr>
+            <tr>
+                <td>SparseVLM</td>
+                <td>56.0<br>90.5%</td>
+                <td>60.0<br>92.7%</td>
+                <td>1696<br>91.1%</td>
+                <td>80.5<br>93.7%</td>
+                <td>67.1<br>96.5%</td>
+                <td>73.8<br>94.0%</td>
+                <td>54.9<br>94.3%</td>
+                <td>18.5<br>93.4%</td>
+                <td><strong>93.3%</strong><br>↑ (11.4%)</td>
+            </tr>
+            <tr class="highlight">
+                <td colspan="10"><strong>Retain 64 Tokens (↓ 88.9%)</strong></td>
+            </tr>
+            <tr>
+                <td>ToMe <sub>(ICLR23)</sub></td>
+                <td>48.6<br>78.5%</td>
+                <td>43.7<br>67.5%</td>
+                <td>1138<br>61.1%</td>
+                <td>52.5<br>61.1%</td>
+                <td>50.0<br>71.9%</td>
+                <td>57.1<br>72.7%</td>
+                <td>45.3<br>77.8%</td>
+                <td>14.0<br>70.7%</td>
+                <td>70.2%</td>
+            </tr>
+            <tr>
+                <td>FastV <sub>(ECCV24)</sub></td>
+                <td>46.1<br>74.5%</td>
+                <td>48.0<br>74.2%</td>
+                <td>1256<br>67.5%</td>
+                <td>48.0<br>55.9%</td>
+                <td>55.1<br>73.5%</td>
+                <td>55.0<br>70.1%</td>
+                <td>47.8<br>82.1%</td>
+                <td>15.6<br>78.8%</td>
+                <td>72.1%</td>
+            </tr>
+            <tr>
+                <td>SparseVLM</td>
+                <td>52.7<br>85.1%</td>
+                <td>56.2<br>86.9%</td>
+                <td>1505<br>80.8%</td>
+                <td>75.1<br>87.4%</td>
+                <td>62.2<br>89.4%</td>
+                <td>68.2<br>86.9%</td>
+                <td>51.8<br>89.0%</td>
+                <td>17.7<br>89.4%</td>
+                <td><strong>86.9%</strong><br>↑ (14.8%)</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 <p><b><i>Table 1:</i></b> <b>Performance of SparseLLaVA under different vision token configurations.</b> The vanilla
   number of vision tokens is 576. The first line of each method is the raw accuracy of benchmarks,
   and the second line is the proportion relative to the upper limit. The last column is the average value.
@@ -2058,102 +2062,106 @@ pre {
 <div>
   <h2 style="color: #C1D2EC;">Video Understanding Tasks</h2>
 </div>
-<div style="display: flex; justify-content: center;">
-  <table class="custom-table">
-    <thead>
-        <tr>
-            <th rowspan="2">Method</th>
-            <th colspan="2">TGIF</th>
-            <th colspan="2">MSVD</th>
-            <th colspan="2">MSRVTT</th>
-            <th colspan="2">ActivityNet</th>
-            <th colspan="2">Avg</th>
-        </tr>
-        <tr>
-            <th>Acc</th>
-            <th>Score</th>
-            <th>Acc</th>
-            <th>Score</th>
-            <th>Acc</th>
-            <th>Score</th>
-            <th>Acc</th>
-            <th>Score</th>
-            <th>Acc</th>
-            <th>Score</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Video-LLAVA</td>
-            <td>47.1</td>
-            <td>3.35</td>
-            <td>69.8</td>
-            <td>3.92</td>
-            <td>56.7</td>
-            <td>3.48</td>
-            <td>43.1</td>
-            <td>3.35</td>
-            <td>100.0%</td>
-            <td>+0.00</td>
-        </tr>
-        <tr>
-            <td>FastV <sub>(ECCV24)</sub></td>
-            <td>23.1<br>49.0%</td>
-            <td>2.47<br>-0.88</td>
-            <td>38.0<br>54.4%</td>
-            <td>2.71<br>-1.21</td>
-            <td>19.3<br>34.0%</td>
-            <td>2.02<br>1.46</td>
-            <td>30.6<br>71.0%</td>
-            <td>2.82<br>-0.53</td>
-            <td>52.1%</td>
-            <td>-1.02</td>
-        </tr>
-        <!-- <tr>
-            <td></td>
-            <td>49.0%</td>
-            <td>-0.88</td>
-            <td>54.4%</td>
-            <td>-1.21</td>
-            <td>34.0%</td>
-            <td>-1.46</td>
-            <td>71.0%</td>
-            <td>-0.53</td>
-            <td></td>
-            <td></td>
-        </tr> -->
-        <tr>
-            <td>SparseVLM</td>
-            <td>44.7<br>94.9%</td>
-            <td>3.29<br>-0.06</td>
-            <td>68.2<br>97.7%</td>
-            <td>3.90<br>-0.02</td>
-            <td>31.0<br>54.7%</td>
-            <td>2.68<br>-0.80</td>
-            <td>42.6<br>98.8%</td>
-            <td>3.32<br>-0.03</td>
-            <td><strong>86.5%</strong><br>↑ (34.4%)</td>
-            <td><strong>-0.17</strong><br>↑ (0.85)</td>
-        </tr>
-        <!-- <tr>
-            <td></td>
-            <td>94.9%</td>
-            <td>-0.06</td>
-            <td>97.7%</td>
-            <td>-0.02</td>
-            <td>54.7%</td>
-            <td>-0.80</td>
-            <td>98.8%</td>
-            <td>-0.03</td>
-            <td class="increase">↑ (34.4%)</td>
-            <td class="increase">↑ (0.85)</td>
-        </tr> -->
-    </tbody>
-</table>
-<p><b><i>Table 2:</i></b> <b>The results of Video-LLaVA with SparseVLM on video question answering task.</b> The
-  original number of video tokens is 2048, while our experiment collectively prunes it down to 135
-  tokens. FastV is included for comparison. The GPT-3.5 turbo is adopted for assistive evaluation.
-</p> 
+<div class="content" style="margin-top: 50px;">
+  <div class="content-Image" style="margin-bottom: 40px">
+    <div style="display: flex; justify-content: center;">
+      <table class="custom-table">
+        <thead>
+            <tr>
+                <th rowspan="2">Method</th>
+                <th colspan="2">TGIF</th>
+                <th colspan="2">MSVD</th>
+                <th colspan="2">MSRVTT</th>
+                <th colspan="2">ActivityNet</th>
+                <th colspan="2">Avg</th>
+            </tr>
+            <tr>
+                <th>Acc</th>
+                <th>Score</th>
+                <th>Acc</th>
+                <th>Score</th>
+                <th>Acc</th>
+                <th>Score</th>
+                <th>Acc</th>
+                <th>Score</th>
+                <th>Acc</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Video-LLAVA</td>
+                <td>47.1</td>
+                <td>3.35</td>
+                <td>69.8</td>
+                <td>3.92</td>
+                <td>56.7</td>
+                <td>3.48</td>
+                <td>43.1</td>
+                <td>3.35</td>
+                <td>100.0%</td>
+                <td>+0.00</td>
+            </tr>
+            <tr>
+                <td>FastV <sub>(ECCV24)</sub></td>
+                <td>23.1<br>49.0%</td>
+                <td>2.47<br>-0.88</td>
+                <td>38.0<br>54.4%</td>
+                <td>2.71<br>-1.21</td>
+                <td>19.3<br>34.0%</td>
+                <td>2.02<br>1.46</td>
+                <td>30.6<br>71.0%</td>
+                <td>2.82<br>-0.53</td>
+                <td>52.1%</td>
+                <td>-1.02</td>
+            </tr>
+            <!-- <tr>
+                <td></td>
+                <td>49.0%</td>
+                <td>-0.88</td>
+                <td>54.4%</td>
+                <td>-1.21</td>
+                <td>34.0%</td>
+                <td>-1.46</td>
+                <td>71.0%</td>
+                <td>-0.53</td>
+                <td></td>
+                <td></td>
+            </tr> -->
+            <tr>
+                <td>SparseVLM</td>
+                <td>44.7<br>94.9%</td>
+                <td>3.29<br>-0.06</td>
+                <td>68.2<br>97.7%</td>
+                <td>3.90<br>-0.02</td>
+                <td>31.0<br>54.7%</td>
+                <td>2.68<br>-0.80</td>
+                <td>42.6<br>98.8%</td>
+                <td>3.32<br>-0.03</td>
+                <td><strong>86.5%</strong><br>↑ (34.4%)</td>
+                <td><strong>-0.17</strong><br>↑ (0.85)</td>
+            </tr>
+            <!-- <tr>
+                <td></td>
+                <td>94.9%</td>
+                <td>-0.06</td>
+                <td>97.7%</td>
+                <td>-0.02</td>
+                <td>54.7%</td>
+                <td>-0.80</td>
+                <td>98.8%</td>
+                <td>-0.03</td>
+                <td class="increase">↑ (34.4%)</td>
+                <td class="increase">↑ (0.85)</td>
+            </tr> -->
+        </tbody>
+    </table>
+    </div>
+  </div>
+  <p><b><i>Table 2:</i></b> <b>The results of Video-LLaVA with SparseVLM on video question answering task.</b> The
+    original number of video tokens is 2048, while our experiment collectively prunes it down to 135
+    tokens. FastV is included for comparison. The GPT-3.5 turbo is adopted for assistive evaluation.
+  </p> 
 </div>
 
     <div>
